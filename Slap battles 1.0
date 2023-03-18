@@ -1,0 +1,60 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Slap Battles 1.0", HidePremium = false, SaveConfig = false, ConfigFolder = "OrionTest"})
+local Tab = Window:MakeTab({
+	Name = "Main Scripts" ,
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+OrionLib:MakeNotification({
+	Name = "This is a SB Hub",
+	Content = "This a SB Hub u can use it in another games but it wont work that well",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+Tab:AddButton({
+	Name = "SB and SR Hitbox" ,
+	Callback = function()
+	loadstring(game:HttpGet(("https://gist.githubusercontent.com/stellar-4242/430ef3087d8d87eb306ca03e728ffbb8/raw/798429dd908b1f4471a1fa569ff62c5e5a93ec61/SLAP.LUA")))()
+      		print("Hitbox Executed")
+  	end    
+})
+Tab:AddButton({
+	Name = "Infinite Yield",
+	Callback = function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+      		print("Infinite Yield Executed")
+  	end    
+})
+local Tab = Window:MakeTab({
+	Name = "Other Hubs",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Tab:AddButton({
+	Name = "Rogue Hub(Normal Mode and SR)",
+	Callback = function() 
+     loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Rogue%20Hub.txt"))()
+      		print("Rogue Hub Executed!")
+  	end    
+})
+Tab:AddButton({
+	Name = "R2O Hub(SR only)",
+	Callback = function() 
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/cheesynob39/SB-SR/main/Main%20%5B%20OPEN%20SOURCE%20%5D.lua"))()
+      		print("button pressed")
+  	end    
+})
+Tab:AddButton({
+	Name = "R20 Hub(Normal Mode only)",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/cheesynob39/R2O/main/LOADSTRING.lua"))()
+      		print("button pressed")
+  	end    
+})
+Tab:AddButton({
+	Name = "Dizzy Hub(Normal Mode Only)",
+	Callback = function()
+      		print("button pressed")
+  	end    
+})
+OrionLib:Init()
